@@ -1,0 +1,263 @@
+Arch: win64
+CompatData: ''
+Creation_Date: '2025-12-31 13:23:34.898506'
+Custom_Path: true
+DLL_Overrides:
+    blinkw32: n,b
+    d3dim: n,b
+    ddraw: n,b
+DXVK: dxvk-2.7.1-7-21eb344
+Environment: Gaming
+Environment_Variables: {}
+External_Programs:
+    0547a75b-3a1b-417b-b7c2-bc381afe14e7:
+        arguments: ''
+        auto_discovered: true
+        executable: Black and White Creature Isle_eReg.exe
+        folder: /run/user/1000/doc/5867393b/bottles/Black-&-White/drive_c/Program
+            Files (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle/Support
+        icon: com.usebottles.bottles-program
+        id: 0547a75b-3a1b-417b-b7c2-bc381afe14e7
+        name: Black and White Creature Isle_eReg
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\CreatureIsle\Support\Black
+            and White Creature Isle_eReg.exe
+        removed: true
+    517c75fa-2089-457e-9c3c-54046e3a909a:
+        arguments: ''
+        dxvk: null
+        dxvk_nvapi: null
+        executable: Setup.exe
+        folder: /run/user/1000/doc/49b0444a/Black & White
+        fsr: null
+        gamescope: null
+        icon: com.usebottles.bottles-program
+        id: 517c75fa-2089-457e-9c3c-54046e3a909a
+        name: Setup
+        path: /run/user/1000/doc/37c08523/Setup.exe
+        post_script: null
+        post_script_args: null
+        pre_script: null
+        pre_script_args: null
+        pulseaudio_latency: null
+        removed: null
+        virtual_desktop: false
+        vkd3d: null
+        winebridge: null
+    5a9aa15d-a741-460f-9bfe-a4a3aa3a1cb4:
+        arguments: ''
+        auto_discovered: true
+        executable: readme.txt
+        folder: /run/user/1000/doc/5867393b/bottles/Black-&-White/drive_c/Program
+            Files (x86)/Lionhead Studios Ltd/Black & White
+        icon: com.usebottles.bottles-program
+        id: 5a9aa15d-a741-460f-9bfe-a4a3aa3a1cb4
+        name: readme
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\readme.txt
+        removed: true
+    78a0898c-ca1a-4b54-b5e7-c5e33f7ff969:
+        arguments: ''
+        auto_discovered: true
+        executable: Black and White Creature Isle_EZ.exe
+        folder: /run/user/1000/doc/5867393b/bottles/Black-&-White/drive_c/Program
+            Files (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle/Support
+        icon: com.usebottles.bottles-program
+        id: 78a0898c-ca1a-4b54-b5e7-c5e33f7ff969
+        name: Black and White Creature Isle_EZ
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\CreatureIsle\Support\Black
+            and White Creature Isle_EZ.exe
+        removed: true
+    78ca9a5c-2da1-4197-b089-b64be53842cd:
+        arguments: ''
+        dxvk: null
+        dxvk_nvapi: null
+        executable: CreatureIsle.exe
+        folder: /run/user/1000/doc/5867393b/bottles/Black-&-White/drive_c/Program
+            Files (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle
+        fsr: null
+        gamescope: null
+        icon: com.usebottles.bottles-program
+        id: 78ca9a5c-2da1-4197-b089-b64be53842cd
+        name: CreatureIsle
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\CreatureIsle\CreatureIsle.exe
+        post_script: null
+        post_script_args: null
+        pre_script: null
+        pre_script_args: null
+        pulseaudio_latency: null
+        removed: null
+        virtual_desktop: null
+        vkd3d: null
+        winebridge: null
+    8817bb45-f4a0-4fe9-89dd-c6def277a224:
+        arguments: ''
+        auto_discovered: true
+        executable: go_ez.exe
+        folder: /run/user/1000/doc/5867393b/bottles/Black-&-White/drive_c/Program
+            Files (x86)/Lionhead Studios Ltd/Black & White/ereg
+        icon: com.usebottles.bottles-program
+        id: 8817bb45-f4a0-4fe9-89dd-c6def277a224
+        name: go_ez
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\ereg\go_ez.exe
+        removed: true
+    99799661-3aa3-43ec-9900-f5143bb726b9:
+        arguments: ''
+        auto_discovered: true
+        executable: LaunchHelp.exe
+        folder: /run/user/1000/doc/5867393b/bottles/Black-&-White/drive_c/Program
+            Files (x86)/Lionhead Studios Ltd/Black & White
+        icon: com.usebottles.bottles-program
+        id: 99799661-3aa3-43ec-9900-f5143bb726b9
+        name: LaunchHelp
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\LaunchHelp.exe
+        removed: true
+    9accc5e1-0f7e-4a31-b338-ef0a1fb23972:
+        arguments: ''
+        dxvk: null
+        dxvk_nvapi: null
+        executable: Setup.exe
+        folder: /run/user/1000/doc/ec4ab6b1/CreatureIsle
+        fsr: null
+        gamescope: null
+        icon: com.usebottles.bottles-program
+        id: 9accc5e1-0f7e-4a31-b338-ef0a1fb23972
+        name: Setup - CreatureIsle
+        path: /run/user/1000/doc/90f2d49a/Setup.exe
+        post_script: null
+        post_script_args: null
+        pre_script: null
+        pre_script_args: null
+        pulseaudio_latency: null
+        removed: null
+        virtual_desktop: null
+        vkd3d: null
+        winebridge: null
+    a357983d-7725-4a63-8366-dda9c7224923:
+        arguments: ''
+        dxvk: true
+        dxvk_nvapi: null
+        executable: runblack.exe
+        folder: /run/user/1000/doc/49b0444a/Black & White
+        fsr: null
+        gamescope: false
+        icon: com.usebottles.bottles-program
+        id: a357983d-7725-4a63-8366-dda9c7224923
+        name: runblack
+        path: /run/user/1000/doc/9e86d1b5/runblack.exe
+        post_script: null
+        post_script_args: null
+        pre_script: null
+        pre_script_args: null
+        pulseaudio_latency: null
+        removed: null
+        virtual_desktop: false
+        vkd3d: null
+        winebridge: null
+    dfbbf80d-4984-45ba-9cfc-82a80756db06:
+        arguments: ''
+        auto_discovered: true
+        executable: Black and White_eReg.exe
+        folder: /run/user/1000/doc/5867393b/bottles/Black-&-White/drive_c/Program
+            Files (x86)/Lionhead Studios Ltd/Black & White/ereg
+        icon: com.usebottles.bottles-program
+        id: dfbbf80d-4984-45ba-9cfc-82a80756db06
+        name: Black and White_eReg
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\ereg\Black
+            and White_eReg.exe
+        removed: true
+Inherited_Environment_Variables:
+- DBUS_SESSION_BUS_ADDRESS
+- DISPLAY
+- HOME
+- LANG
+- LC_ALL
+- LC_CTYPE
+- LC_MESSAGES
+- PATH
+- PULSE_SERVER
+- TERM
+- TZ
+- USER
+- WAYLAND_DISPLAY
+- XAUTHORITY
+- XDG_RUNTIME_DIR
+Installed_Dependencies:
+- d3dx9
+- msls31
+- arial32
+- times32
+- courie32
+- d3dcompiler_43
+- d3dcompiler_47
+- mono
+- gecko
+Language: sys
+LatencyFleX: latencyflex-v0.1.1
+Limit_System_Environment: true
+NVAPI: dxvk-nvapi-v0.9.0
+Name: Black & White
+Parameters:
+    custom_dpi: 96
+    decorated: true
+    discrete_gpu: true
+    dxvk: true
+    dxvk_nvapi: false
+    fixme_logs: false
+    fsr: false
+    fsr_quality_mode: none
+    fsr_sharpening_strength: 2
+    fullscreen_capture: false
+    gamemode: false
+    gamescope: false
+    gamescope_borderless: false
+    gamescope_fps: 0
+    gamescope_fps_no_focus: 0
+    gamescope_fullscreen: true
+    gamescope_game_height: 0
+    gamescope_game_width: 0
+    gamescope_scaling: false
+    gamescope_window_height: 0
+    gamescope_window_width: 0
+    latencyflex: false
+    mangohud: false
+    mangohud_display_on_game_start: true
+    mouse_warp: true
+    obsvkc: false
+    pulseaudio_latency: false
+    renderer: gl
+    sandbox: false
+    sync: fsync
+    take_focus: false
+    use_be_runtime: true
+    use_eac_runtime: true
+    use_runtime: false
+    use_steam_runtime: true
+    versioning_automatic: false
+    versioning_compression: false
+    versioning_exclusion_patterns: false
+    virtual_desktop: false
+    virtual_desktop_res: 1920x1080
+    vkbasalt: false
+    vkd3d: false
+    vmtouch: false
+    vmtouch_cache_cwd: false
+    wayland: false
+    winebridge: false
+Path: /run/user/1000/doc/5867393b/bottles/Black-&-White
+Registry_Rules: []
+Runner: wine-ge-proton8-26
+RunnerPath: ''
+Sandbox:
+    share_net: false
+    share_sound: false
+State: 0
+Uninstallers: {}
+Update_Date: '2026-01-10 00:09:34.317460'
+VKD3D: vkd3d-proton-3.0
+Versioning: false
+Versioning_Exclusion_Patterns: []
+Windows: winxp
+Winebridge: false
+WorkingDir: /run/user/1000/doc/49b0444a/Black & White
+data: {}
+run_in_terminal: false
+session_arguments: ''
