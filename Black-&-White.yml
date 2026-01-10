@@ -5,6 +5,7 @@ Custom_Path: true
 DLL_Overrides:
     blinkw32: n,b
     d3dim: n,b
+    d3dim700: n,b
     ddraw: n,b
 DXVK: dxvk-2.7.1-7-21eb344
 Environment: Gaming
@@ -24,7 +25,7 @@ External_Programs:
         removed: true
     517c75fa-2089-457e-9c3c-54046e3a909a:
         arguments: ''
-        dxvk: null
+        dxvk: false
         dxvk_nvapi: null
         executable: Setup.exe
         folder: /run/user/1000/doc/49b0444a/Black & White
@@ -112,7 +113,7 @@ External_Programs:
         removed: true
     9accc5e1-0f7e-4a31-b338-ef0a1fb23972:
         arguments: ''
-        dxvk: null
+        dxvk: false
         dxvk_nvapi: null
         executable: Setup.exe
         folder: /run/user/1000/doc/ec4ab6b1/CreatureIsle
@@ -251,7 +252,7 @@ Sandbox:
     share_sound: false
 State: 0
 Uninstallers: {}
-Update_Date: '2026-01-10 00:09:34.317460'
+Update_Date: '2026-01-11 00:27:24.747727'
 VKD3D: vkd3d-proton-3.0
 Versioning: false
 Versioning_Exclusion_Patterns: []

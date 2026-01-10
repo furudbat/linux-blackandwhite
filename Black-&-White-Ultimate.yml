@@ -1,0 +1,262 @@
+Arch: win64
+CompatData: ''
+Creation_Date: '2026-01-06 18:01:04.426906'
+Custom_Path: true
+DLL_Overrides:
+    d3dim: n,b
+    d3dim700: n,b
+    ddraw: n,b
+DXVK: dxvk-2.7.1-7-21eb344
+Environment: Gaming
+Environment_Variables: {}
+External_Programs:
+    04a468f1-a836-4297-832e-68eadd21ac0a:
+        arguments: ''
+        auto_discovered: true
+        executable: runblack.exe
+        folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White
+        icon: com.usebottles.bottles-program
+        id: 04a468f1-a836-4297-832e-68eadd21ac0a
+        name: runblack
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\runblack.exe
+        removed: true
+    1a69a7db-55b6-4192-b740-f187a0ec8ba6:
+        arguments: ''
+        dxvk: null
+        dxvk_nvapi: null
+        executable: BWUltimate.exe
+        folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White/Ultimate
+        fsr: null
+        gamescope: null
+        icon: com.usebottles.bottles-program
+        id: 1a69a7db-55b6-4192-b740-f187a0ec8ba6
+        name: BWUltimate
+        path: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White/Ultimate/BWUltimate.exe
+        post_script: null
+        post_script_args: null
+        pre_script: null
+        pre_script_args: null
+        pulseaudio_latency: null
+        removed: null
+        virtual_desktop: null
+        vkd3d: null
+        winebridge: null
+    301e17ea-b053-46d2-a27e-3264e2baecb8:
+        arguments: ''
+        auto_discovered: true
+        executable: go_ez.exe
+        folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White/ereg
+        icon: com.usebottles.bottles-program
+        id: 301e17ea-b053-46d2-a27e-3264e2baecb8
+        name: go_ez
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\ereg\go_ez.exe
+        removed: true
+    3b1ad25c-277b-4423-8e60-54cffc10f01f:
+        executable: Setup.exe
+        folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White/Ultimate
+        id: 3b1ad25c-277b-4423-8e60-54cffc10f01f
+        name: Setup
+        path: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White/Ultimate/Setup.exe
+    61f603cf-e912-4b41-8f42-02c8c54c22f8:
+        arguments: ''
+        auto_discovered: true
+        executable: CreatureIsle.exe
+        folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle
+        icon: com.usebottles.bottles-program
+        id: 61f603cf-e912-4b41-8f42-02c8c54c22f8
+        name: CreatureIsle
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\CreatureIsle\CreatureIsle.exe
+        removed: true
+    a3c543de-942c-4ae3-be0b-f78a01f4f059:
+        executable: CreatureIsle.exe
+        folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle
+        id: a3c543de-942c-4ae3-be0b-f78a01f4f059
+        name: CreatureIsle
+        path: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle/CreatureIsle.exe
+    a62d2685-4ae9-47ab-899a-74b27f7ed1de:
+        arguments: ''
+        auto_discovered: true
+        executable: Black and White Creature Isle_eReg.exe
+        folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle/Support
+        icon: com.usebottles.bottles-program
+        id: a62d2685-4ae9-47ab-899a-74b27f7ed1de
+        name: Black and White Creature Isle_eReg
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\CreatureIsle\Support\Black
+            and White Creature Isle_eReg.exe
+        removed: true
+    d327add5-1096-45d1-800b-e734e65bd59b:
+        arguments: null
+        dxvk: null
+        dxvk_nvapi: null
+        executable: Setup.exe
+        folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White/Ultimate
+        fsr: null
+        gamescope: null
+        icon: com.usebottles.bottles-program
+        id: d327add5-1096-45d1-800b-e734e65bd59b
+        name: Setup
+        path: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White/Ultimate/Setup.exe
+        post_script: null
+        post_script_args: null
+        pre_script: null
+        pre_script_args: null
+        pulseaudio_latency: null
+        removed: true
+        virtual_desktop: null
+        vkd3d: null
+        winebridge: null
+    d47576db-3e8c-4fe0-86f9-e004aa14db75:
+        arguments: ''
+        auto_discovered: true
+        executable: Black and White Creature Isle_EZ.exe
+        folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle/Support
+        icon: com.usebottles.bottles-program
+        id: d47576db-3e8c-4fe0-86f9-e004aa14db75
+        name: Black and White Creature Isle_EZ
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\CreatureIsle\Support\Black
+            and White Creature Isle_EZ.exe
+        removed: true
+    df9d2471-4605-4832-87a4-604ba65f6afa:
+        arguments: ''
+        auto_discovered: true
+        executable: Black and White_eReg.exe
+        folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White/ereg
+        icon: com.usebottles.bottles-program
+        id: df9d2471-4605-4832-87a4-604ba65f6afa
+        name: Black and White_eReg
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\ereg\Black
+            and White_eReg.exe
+        removed: true
+    e94cefb1-659e-49c4-a846-f298a1ab5991:
+        arguments: ''
+        auto_discovered: true
+        executable: readme.txt
+        folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White
+        icon: com.usebottles.bottles-program
+        id: e94cefb1-659e-49c4-a846-f298a1ab5991
+        name: readme
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\readme.txt
+        removed: true
+    f3fda6d3-cda2-4dd5-8c51-69bd2e9b1244:
+        arguments: ''
+        auto_discovered: true
+        executable: LaunchHelp.exe
+        folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
+            (x86)/Lionhead Studios Ltd/Black & White
+        icon: com.usebottles.bottles-program
+        id: f3fda6d3-cda2-4dd5-8c51-69bd2e9b1244
+        name: LaunchHelp
+        path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\LaunchHelp.exe
+        removed: true
+Inherited_Environment_Variables:
+- DBUS_SESSION_BUS_ADDRESS
+- DISPLAY
+- HOME
+- LANG
+- LC_ALL
+- LC_CTYPE
+- LC_MESSAGES
+- PATH
+- PULSE_SERVER
+- TERM
+- TZ
+- USER
+- WAYLAND_DISPLAY
+- XAUTHORITY
+- XDG_RUNTIME_DIR
+Installed_Dependencies:
+- d3dx9
+- msls31
+- arial32
+- times32
+- courie32
+- d3dcompiler_43
+- d3dcompiler_47
+- mono
+- gecko
+Language: sys
+LatencyFleX: latencyflex-v0.1.1
+Limit_System_Environment: true
+NVAPI: dxvk-nvapi-v0.9.0
+Name: Black & White Ultimate
+Parameters:
+    custom_dpi: 96
+    decorated: true
+    discrete_gpu: true
+    dxvk: true
+    dxvk_nvapi: false
+    fixme_logs: false
+    fsr: false
+    fsr_quality_mode: none
+    fsr_sharpening_strength: 2
+    fullscreen_capture: false
+    gamemode: false
+    gamescope: false
+    gamescope_borderless: false
+    gamescope_fps: 0
+    gamescope_fps_no_focus: 0
+    gamescope_fullscreen: true
+    gamescope_game_height: 0
+    gamescope_game_width: 0
+    gamescope_scaling: false
+    gamescope_window_height: 0
+    gamescope_window_width: 0
+    latencyflex: false
+    mangohud: false
+    mangohud_display_on_game_start: true
+    mouse_warp: true
+    obsvkc: false
+    pulseaudio_latency: false
+    renderer: gl
+    sandbox: false
+    sync: fsync
+    take_focus: false
+    use_be_runtime: true
+    use_eac_runtime: true
+    use_runtime: false
+    use_steam_runtime: false
+    versioning_automatic: false
+    versioning_compression: false
+    versioning_exclusion_patterns: false
+    virtual_desktop: false
+    virtual_desktop_res: 1280x720
+    vkbasalt: false
+    vkd3d: false
+    vmtouch: false
+    vmtouch_cache_cwd: false
+    wayland: false
+    winebridge: false
+Path: /mnt/gaming/Games/bottles/Black-&-White-Ultimate
+Registry_Rules: []
+Runner: kron4ek-wine-proton-9.0-3-amd64
+RunnerPath: ''
+Sandbox:
+    share_net: false
+    share_sound: false
+State: 0
+Uninstallers: {}
+Update_Date: '2026-01-10 23:27:48.682810'
+VKD3D: vkd3d-proton-3.0
+Versioning: false
+Versioning_Exclusion_Patterns: []
+Windows: winxp
+Winebridge: false
+WorkingDir: ''
+data: {}
+run_in_terminal: false
+session_arguments: ''
