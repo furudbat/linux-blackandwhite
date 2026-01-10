@@ -1,6 +1,6 @@
 # Black & White on Linux
 
-Install Black & White (2001) on Linux (wine)
+This guide explains how to install **Black & White (2001)** on Linux using **Wine via Bottles** 🍷.
 
 ## Requirements
 
@@ -10,7 +10,7 @@ You need [bottles](https://usebottles.com/), simples way to install bottles is t
 
 ### Game
 
-So this game is **abandonware**, you probably can find it on the Internet or just mount the CD/backup you own.
+Black & White is considered **abandonware**. You can usually find it online, or you can use CDs/backups you already own.
 
 - Black & White (2001)
 - Black & White: Creature Idle (2002)
@@ -27,56 +27,63 @@ So this game is **abandonware**, you probably can find it on the Internet or jus
 
 ## Installation (through bottles and wine)
 
-### prepare
+### preparation
 
-1. you need to download the patches and store them, for example in `patches` folder.
-2. mount CDs/iso
-    - Black & White -> `/mnt/cdrom`
-    - Creature Isle -> `/mnt/cdrom2`
+1. Download all patches and store them in a folder (e.g. `~/Downloads/patches`).
+2. Mount the CDs or ISO files:
+   - Black & White -> `/mnt/cdrom`
+   - Creature Isle -> `/mnt/cdrom2`
 
 ### Setup bottle
 
-1. Start bottles and create a new bottle by clicking on "+"
+1. Open **Bottles** and click **"+"** to create a new bottle.
 
 ![create bottle](assets/screenshot1.png)
 
-- Name: `Black & White`
-- Gaming
-- Runner: `wine-ge-proton8-26`
+- **Name:** `Black & White`
+- **Type:** Gaming
+- **Runner:** `wine-ge-proton8-26`
 
-_You can install more Runner in the bottles app, go to (open main menu) "Preferences" -> "Runners" -> "Wine GE" and download `wine-ge-proton8-26`_
+> You can install additional runners in Bottles via  
+> **Main Menu -> Preferences → Runners -> Wine GE**, then download `wine-ge-proton8-26`
 
-2. Setup bottle by clicking in the "Settings"
+2. Open the bottle **Settings**:
 
-- disable `VKD3D`
+- Disable `VKD3D`
 - **set "Windows Version" to `Windows XP`**
 
 ![settings](assets/screenshot2.png)
 
-3. go to "Manage Drives" and add your `cdrom` drives
+3. Open **Manage Drives** and add your CD-ROM mount points: `/mnt/cdrom` and `/mnt/cdrom2`
 
 ![manage drives](assets/screenshot3.png)
 
-_You can add folder containing patches_  
-_after setup you can remove the cd drives_
+> You can also add the folder containing the patches here.  
+> CD- and patches-drives can be removed after installation.
 
 ### Install Game
 
-Click on "Black & White" bottle, scroll down and go to "Tools" -> "Legacy Wine Tools", click on "Explorer".
+1. Open the **Black & White** bottle.
+2. Go to **Tools -> Legacy Wine Tools -> Explorer**.
+3. Navigate to the mounted CD and run `Setup.exe`.
 
-Now install game from mounted CD, in "Explorer", double-click on `Setup.exe`.
-_NOTE: you need a Serial Key, probably somewhere **abandond** on the Internet_
-Just need everything default, you don't need to read the ReadMe nor start the game, skip online registration.
+
+> **Note:** A serial key is required. It can usually be found online due to the game being abandonware.
+
+Use default settings during installation.  
+Skip the ReadMe, do **not** start the game, and skip online registration.
 
 ![install setup](assets/screenshot4.png)
 
 #### Copy audio files
 
-Copy "Audio" directory from CD into installed game directory `C:\Program Files (x86)\Lionhead Studios Ltd\Black & White`
+Copy "Audio" directory from CD into installed game directory `C:\Program Files (x86)\Lionhead Studios Ltd\Black & White`.
 
 ### Install patches
 
-(Still) In the Explorer, go to your mounted patches (`Z:\...\Downloads\...\patches`) directory and install every patch in the following order:
+Still in Wine Explorer, navigate to your patches folder  
+(e.g. `Z:\home\user\Downloads\patches`) and install the patches **in this order**:
+
 
 1. Black_White_Patch_v1.100.exe
 2. BW_Football_Addon.exe
@@ -86,20 +93,26 @@ Copy "Audio" directory from CD into installed game directory `C:\Program Files (
 
 ### Setup Game
 
-In the Explorer, go to `C:\Program Files (x86)\Lionhead Studios Ltd\Black & White`.
+1. In Explorer, go to: `C:\Program Files (x86)\Lionhead Studios Ltd\Black & White`.
+2. Run `Setup.exe`
+    - Configure resolution and graphics
+    - Optionally enable **Windowed Mode** for testing, later you can switch to fullscreen
 
-1. double-click (start) `Setup.exe`
-    - setup your resolution and graphic settings
-    - you may check "window mode" (for testing, later you can switch to fullscreen)
 
+### Install Add-On Creature Isle (optional)
 
-### Install Add-On (optional)
+1. In Explorer, open the Creature Isle CD
+2. Run `Setup.exe`
+3. Install the Creature Isle fan patch: `BWCIFanPatchInstaller.exe`
+4. Do **not** start the game yet
 
-In Explorer, install the Creature Isle Add-on (`cdrom2`), run `Setup.exe`, install (fan) patches (`BWCIFanPatchInstaller.exe`), don't start game.
+### Final Bottle Configuration
 
-### Setup bottle (again)
+Close Wine Explorer and return to the bottle **Settings**.
 
-Close the Explorer and go to the "Black & White" bottle, "Settings" -> "DLL Overrides", Add "New Override"s
+#### DLL Overrides
+
+Add the following overrides:
 
 - `blinkw32`
 - `d3dim`
@@ -110,15 +123,17 @@ Close the Explorer and go to the "Black & White" bottle, "Settings" -> "DLL Over
 
 ## Start/Test the Game
 
-Start the Explorer, go to the game directory and start "runblack.exe"
+1. Open **Legacy Wine Tools → Explorer**
+2. Navigate to the game directory
+3. Start `runblack.exe`
 
-if everything start and works your are golden 🎉
+If the game starts and runs correctly - congratulations 🎉
 
-_Note: With the Fan Patch you should not need the no-cd exe ;), otherwise the game wouldn't start_
+> With the **Fan Patch**, a no-CD executable is usually **not required**.
 
 ### Add Shortcuts
 
-Go to the "Black & White" bottle and add "Programs"
+In the **Black & White** bottle, add the following programs:
 
 - CreatureIdle - CreatureIdle -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/CreatureIdle/CreatureIdle.exe`
 - Setup -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/Setup.exe`
@@ -127,30 +142,39 @@ Go to the "Black & White" bottle and add "Programs"
 
 ![programs](assets/screenshot6.png)
 
-_Tip: You can rename the "Setup" shortcut_
+> Tip: Rename shortcuts for clarity.
 
 Try to start the game (`runblack`) via "Programs"...
 
-If it wouldn't start, try disabling `VKD3D` (in "..." -> "Change Launch Options") and `DXVK`, set "Virtual Desktop" to "off".  
-Try out (older) runners: `lutris-ge-...`, `ge-proton8`.
-You can still start the game with the "Explorer" (`Legacy Wine Tools` -> `Explorer`).
+### Troubleshooting
+
+If the game does not start:
+
+- Disable **VKD3D** and **DXVK**
+- Turn **Virtual Desktop** off
+- Try different runners:
+    - `lutris-ge-...`
+    - `kron4ek-wine-proton-...`
+- You can always start the game via **Wine Explorer**
 
 #### Add to Steam (optional)
 
-Click on "..." (runblack) -> "Add to Steam" (you may restart steam).
+1. In Bottles, click **"..." -> "Add to Steam"** for `runblack`
+2. Restart Steam if needed
 
 
-##### gamescope
+##### gamescope (optional)
 
-In Steam go to "Black & White" -> "Manage" -> "Properties...", edit the current shortcut options _"START IN" may vary_
-
-Add gamescope and extend launch options
+In Steam, Black & White:
+- **Manage -> Properties**
+- Add `gamescope` to launch options  
+(the **Start In** path may vary)
 
 ![steam gamescope](assets/screenshot7.png)
 
 #### Customize Header
 
-Customize Logo and Header with [SGDBoop](https://www.steamgriddb.com/boop): https://www.steamgriddb.com/game/37411
+Customize game logo and header using [SGDBoop](https://www.steamgriddb.com/boop): https://www.steamgriddb.com/game/37411
 
 ![custom header](assets/screenshot8.png)
 
@@ -158,8 +182,8 @@ Customize Logo and Header with [SGDBoop](https://www.steamgriddb.com/boop): http
 ## Install Mods
 
 - Replace `runblack.exe` with [Infinite Drawing Distance](https://www.bwgame.net/downloads/black-white-v1-42-infinite-drawing-distance.1464/)
-- Replace game assets with [HD assets](https://www.bwgame.net/downloads/hd-project.1474/)
-- Download more [Maps](https://www.bwgame.net/downloads/categories/maps.45/)
+- Install [HD assets](https://www.bwgame.net/downloads/hd-project.1474/)
+- Download more custom [Maps](https://www.bwgame.net/downloads/categories/maps.45/)
 
 ---
 
@@ -169,21 +193,21 @@ Customize Logo and Header with [SGDBoop](https://www.steamgriddb.com/boop): http
 
 ![wine dependencies](assets/screenshot9.png)
 
-_see [Exported bottle config](Black-&-White.yml) for more details_
+_See [Exported bottle config](Black-&-White.yml) for more details_
 
 ### Limitations
 
 - Game (window) only renders on the primary monitor, if you are playing in window mode.
-- use fan patch or no-cd (exe)
+- Fan patch or no-CD executable is required
 
 ### My Setup
 
-- CachyOS (64 Bit)
-- CPU: AMD (x86)
-- GPU: Nvidia
-- Hyprland (wayland)
-- bottles installed via flatpak
-- gamescope and steam installed via CachyOS Gaming package
+- CachyOS (64-bit)
+- AMD CPU
+- NVIDIA GPU
+- Hyprland (Wayland)
+- Bottles (Flatpak)
+- Steam + Gamescope (CachyOS Gaming package)
 
 ---
 
@@ -199,3 +223,4 @@ _see [Exported bottle config](Black-&-White.yml) for more details_
 - https://www.bwgame.net/threads/running-black-white-on-windows-10.7916/
 - https://lutris.net/games/black-white/
 - https://discord.com/channels/306953102848950273/1237853952066715708
+- https://appdb.winehq.org/objectManager.php?amp=&iId=156&sClass=application
