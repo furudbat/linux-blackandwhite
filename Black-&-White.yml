@@ -69,11 +69,11 @@ External_Programs:
         removed: true
     78ca9a5c-2da1-4197-b089-b64be53842cd:
         arguments: ''
-        dxvk: null
+        dxvk: true
         dxvk_nvapi: null
         executable: CreatureIsle.exe
-        folder: /run/user/1000/doc/5867393b/bottles/Black-&-White/drive_c/Program
-            Files (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle
+        folder: /mnt/gaming/Games/bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead
+            Studios Ltd/Black & White/CreatureIsle
         fsr: null
         gamescope: null
         icon: com.usebottles.bottles-program
@@ -116,7 +116,7 @@ External_Programs:
         dxvk: false
         dxvk_nvapi: null
         executable: Setup.exe
-        folder: /run/user/1000/doc/ec4ab6b1/CreatureIsle
+        folder: /run/user/1000/doc/90f2d49a
         fsr: null
         gamescope: null
         icon: com.usebottles.bottles-program
@@ -134,10 +134,11 @@ External_Programs:
         winebridge: null
     a357983d-7725-4a63-8366-dda9c7224923:
         arguments: ''
-        dxvk: true
+        dxvk: false
         dxvk_nvapi: null
         executable: runblack.exe
-        folder: /run/user/1000/doc/49b0444a/Black & White
+        folder: /mnt/gaming/Games/bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead
+            Studios Ltd/Black & White
         fsr: null
         gamescope: false
         icon: com.usebottles.bottles-program
@@ -210,6 +211,7 @@ Parameters:
     gamemode: false
     gamescope: false
     gamescope_borderless: false
+    gamescope_custom_options: ''
     gamescope_fps: 0
     gamescope_fps_no_focus: 0
     gamescope_fullscreen: true
@@ -252,7 +254,7 @@ Sandbox:
     share_sound: false
 State: 0
 Uninstallers: {}
-Update_Date: '2026-01-11 00:27:24.747727'
+Update_Date: '2026-02-05 12:26:50.232885'
 VKD3D: vkd3d-proton-3.0
 Versioning: false
 Versioning_Exclusion_Patterns: []

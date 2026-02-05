@@ -23,7 +23,7 @@ External_Programs:
         removed: true
     1a69a7db-55b6-4192-b740-f187a0ec8ba6:
         arguments: ''
-        dxvk: null
+        dxvk: false
         dxvk_nvapi: null
         executable: BWUltimate.exe
         folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
@@ -56,13 +56,28 @@ External_Programs:
         path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\ereg\go_ez.exe
         removed: true
     3b1ad25c-277b-4423-8e60-54cffc10f01f:
+        arguments: ''
+        dxvk: false
+        dxvk_nvapi: null
         executable: Setup.exe
         folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
             (x86)/Lionhead Studios Ltd/Black & White/Ultimate
+        fsr: null
+        gamescope: null
+        icon: com.usebottles.bottles-program
         id: 3b1ad25c-277b-4423-8e60-54cffc10f01f
         name: Setup
         path: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
             (x86)/Lionhead Studios Ltd/Black & White/Ultimate/Setup.exe
+        post_script: null
+        post_script_args: null
+        pre_script: null
+        pre_script_args: null
+        pulseaudio_latency: null
+        removed: null
+        virtual_desktop: null
+        vkd3d: null
+        winebridge: null
     61f603cf-e912-4b41-8f42-02c8c54c22f8:
         arguments: ''
         auto_discovered: true
@@ -74,14 +89,6 @@ External_Programs:
         name: CreatureIsle
         path: C:\Program Files (x86)\Lionhead Studios Ltd\Black & White\CreatureIsle\CreatureIsle.exe
         removed: true
-    a3c543de-942c-4ae3-be0b-f78a01f4f059:
-        executable: CreatureIsle.exe
-        folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
-            (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle
-        id: a3c543de-942c-4ae3-be0b-f78a01f4f059
-        name: CreatureIsle
-        path: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
-            (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle/CreatureIsle.exe
     a62d2685-4ae9-47ab-899a-74b27f7ed1de:
         arguments: ''
         auto_discovered: true
@@ -208,6 +215,7 @@ Parameters:
     gamemode: false
     gamescope: false
     gamescope_borderless: false
+    gamescope_custom_options: ''
     gamescope_fps: 0
     gamescope_fps_no_focus: 0
     gamescope_fullscreen: true
@@ -243,14 +251,14 @@ Parameters:
     winebridge: false
 Path: /mnt/gaming/Games/bottles/Black-&-White-Ultimate
 Registry_Rules: []
-Runner: kron4ek-wine-proton-9.0-3-amd64
+Runner: wine-ge-proton8-26
 RunnerPath: ''
 Sandbox:
     share_net: false
     share_sound: false
 State: 0
 Uninstallers: {}
-Update_Date: '2026-01-10 23:27:48.682810'
+Update_Date: '2026-01-31 13:41:14.123278'
 VKD3D: vkd3d-proton-3.0
 Versioning: false
 Versioning_Exclusion_Patterns: []

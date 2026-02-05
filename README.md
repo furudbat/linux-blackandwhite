@@ -150,12 +150,17 @@ Try to start the game (`runblack`) via "Programs"...
 
 If the game does not start:
 
-- Disable **VKD3D** and **DXVK**
-- Turn **Virtual Desktop** off
+- Start the Game with Terminal, and have a lock at the logs: click in "..." of the `runblack` program, click on "Launch with Terminal"
+- Disable **VKD3D** and **DXVK**: click in "..." of the `runblack` program, click on "Change Launcher Options"
+- Turn off **Virtual Desktop**
 - Try different runners:
     - `lutris-ge-...`
     - `kron4ek-wine-proton-...`
 - You can always start the game via **Wine Explorer**
+- Set Working Directory to installed game directory `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White`
+- Use [flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) and configure permissions for bottles
+    - Like the filesystem paths for your bottles and games
+
 
 #### Add to Steam (optional)
 
@@ -167,8 +172,13 @@ If the game does not start:
 
 In Steam, Black & White:
 - **Manage -> Properties**
-- Add `gamescope` to launch options  
+- Set `gamescope` as target  
 (the **Start In** path may vary)
+- Edit Launch Options: `-b -w 1920 -h 1080 --framerate-limit 60 -- gamemoderun flatpak run --command=bottles-cli com.usebottles.bottles run -b "Black & White" -p "runblack"`
+    - Set Screen Resolution to 1920x1080
+    - Set Windowed Mode
+
+NOTE: Use the width and height of your Setup (see Setup.exe)
 
 ![steam gamescope](assets/screenshot7.png)
 
@@ -197,7 +207,7 @@ _See [Exported bottle config](Black-&-White.yml) for more details_
 
 ### Limitations
 
-- Game (window) only renders on the primary monitor, if you are playing in window mode.
+- Game (window) may only renders on the primary monitor, if you are playing in window mode.
 - Fan patch or no-CD executable is required
 
 ### My Setup

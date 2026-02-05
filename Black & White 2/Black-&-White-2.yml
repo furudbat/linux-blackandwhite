@@ -23,10 +23,11 @@ External_Programs:
         removed: true
     394c106f-1df5-4ea0-bcdc-2a376b1421ff:
         arguments: ''
-        dxvk: null
+        dxvk: false
         dxvk_nvapi: null
         executable: white.exe
-        folder: /run/user/1000/doc/a9202368/Black & White 2
+        folder: /mnt/gaming/Games/bottles/Black-&-White-2/drive_c/Program Files (x86)/Lionhead
+            Studios/Black & White 2
         fsr: null
         gamescope: false
         icon: com.usebottles.bottles-program
@@ -144,6 +145,7 @@ Parameters:
     gamemode: false
     gamescope: false
     gamescope_borderless: false
+    gamescope_custom_options: ''
     gamescope_fps: 0
     gamescope_fps_no_focus: 0
     gamescope_fullscreen: true
@@ -186,7 +188,7 @@ Sandbox:
     share_sound: false
 State: 0
 Uninstallers: {}
-Update_Date: '2026-01-10 21:53:35.741814'
+Update_Date: '2026-01-31 13:45:37.743016'
 VKD3D: vkd3d-proton-3.0
 Versioning: false
 Versioning_Exclusion_Patterns: []
