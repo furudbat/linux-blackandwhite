@@ -112,9 +112,8 @@ Close Wine Explorer and return to the bottle **Settings**.
 
 #### DLL Overrides
 
-Add the following overrides:
+Add the following overrides ("Native, then Builtin"):
 
-- `blinkw32`
 - `d3dim`
 - `ddraw`
 - `d3dim700`

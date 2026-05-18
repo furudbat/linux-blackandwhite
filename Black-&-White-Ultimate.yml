@@ -28,7 +28,6 @@ External_Programs:
         executable: BWUltimate.exe
         folder: /mnt/gaming/Games/bottles/Black-&-White-Ultimate/drive_c/Program Files
             (x86)/Lionhead Studios Ltd/Black & White/Ultimate
-        fsr: null
         gamescope: null
         icon: com.usebottles.bottles-program
         id: 1a69a7db-55b6-4192-b740-f187a0ec8ba6
@@ -209,7 +208,6 @@ Parameters:
     dxvk_nvapi: false
     fixme_logs: false
     fsr: false
-    fsr_quality_mode: none
     fsr_sharpening_strength: 2
     fullscreen_capture: false
     gamemode: false
@@ -237,7 +235,7 @@ Parameters:
     use_be_runtime: true
     use_eac_runtime: true
     use_runtime: false
-    use_steam_runtime: false
+    use_steam_runtime: true
     versioning_automatic: false
     versioning_compression: false
     versioning_exclusion_patterns: false
@@ -251,18 +249,18 @@ Parameters:
     winebridge: false
 Path: /mnt/gaming/Games/bottles/Black-&-White-Ultimate
 Registry_Rules: []
-Runner: wine-ge-proton8-26
+Runner: kron4ek-wine-proton-10.0-4-amd64
 RunnerPath: ''
 Sandbox:
     share_net: false
     share_sound: false
 State: 0
 Uninstallers: {}
-Update_Date: '2026-01-31 13:41:14.123278'
+Update_Date: '2026-05-18 13:28:02.995675'
 VKD3D: vkd3d-proton-3.0
 Versioning: false
 Versioning_Exclusion_Patterns: []
-Windows: winxp
+Windows: win10
 Winebridge: false
 WorkingDir: ''
 data: {}
