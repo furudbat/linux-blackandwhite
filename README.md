@@ -159,6 +159,7 @@ If the game does not start:
 - You can always try starting the game via **Wine Explorer**.
 - Set the Working Directory to the installed game directory: `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White`
 - Use [Flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) to configure permissions for Bottles (such as the filesystem paths for your bottles and games).
+- Avoid installing the Game on a NTFS Drive
 
 > Black & White uses old DirectDraw/Direct3D APIs that sometimes work better without DXVK.
 
