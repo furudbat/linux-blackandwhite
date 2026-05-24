@@ -6,14 +6,17 @@ This guide explains how to install **Black & White (2001)** on Linux using **Win
 
 ### System
 
-You need [bottles](https://usebottles.com/), simples way to install bottles is through [flatpak](https://flathub.org/en/apps/com.usebottles.bottles).
+You need [bottles](https://usebottles.com/).  
+The simplest way to install Bottles is through [flatpak](https://flathub.org/en/apps/com.usebottles.bottles).
 
 ### Game
 
-Black & White is considered **abandonware**. You can usually find it online, or you can use CDs/backups you already own.
+
+Black & White is no longer commercially distributed in most regions, it is considered **abandonware**.  
+Use original CDs/backups you own.
 
 - Black & White (2001)
-- Black & White: Creature Idle (2002)
+- Black & White: Creature Isle (2002)
 
 
 #### Patches
@@ -25,7 +28,7 @@ Black & White is considered **abandonware**. You can usually find it online, or 
 - [Patch v1.42 (Fanpatch)](https://www.bwgame.net/downloads/black-white-unofficial-patch-v1-42.1418/)
 
 
-## Installation (through bottles and wine)
+## Installation (Bottles + Wine)
 
 ### preparation
 
@@ -37,6 +40,8 @@ Black & White is considered **abandonware**. You can usually find it online, or 
 ### Setup bottle
 
 1. Open **Bottles** and click **"+"** to create a new bottle.
+
+> Bottles Gaming environments already include required 32-bit compatibility support for older Windows games.
 
 ![create bottle](assets/screenshot1.png)
 
@@ -84,12 +89,13 @@ Copy "Audio" directory from CD into installed game directory `C:\Program Files (
 Still in Wine Explorer, navigate to your patches folder  
 (e.g. `Z:\home\user\Downloads\patches`) and install the patches **in this order**:
 
-
 1. Black_White_Patch_v1.100.exe
 2. BW_Football_Addon.exe
 3. BW_Villager_Banter.exe
 4. black_white_patch_v1_20.exe
 5. BWFanPatchInstaller.exe
+
+> Install patches exactly in this order to avoid older installers overwriting newer game files.
 
 ### Setup Game
 
@@ -97,6 +103,9 @@ Still in Wine Explorer, navigate to your patches folder
 2. Run `Setup.exe`
     - Configure resolution and graphics
     - Optionally enable **Windowed Mode** for testing, later you can switch to fullscreen
+
+> Enable "Windowed Mode" for testing.
+> Later you can switch back to fullscreen mode.
 
 
 ### Install Add-On Creature Isle (optional)
@@ -134,10 +143,10 @@ If the game starts and runs correctly - congratulations 🎉
 
 In the **Black & White** bottle, add the following programs:
 
-- CreatureIdle - CreatureIdle -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/CreatureIdle/CreatureIdle.exe`
+- CreatureIsle - CreatureIsle -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle/CreatureIsle.exe`
 - Setup -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/Setup.exe`
 - runblack -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/runblack.exe`
-- Setup - CreatureIdle -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/CreatureIdle/Setup.exe`
+- Setup - CreatureIsle -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle/Setup.exe`
 
 ![programs](assets/screenshot6.png)
 
@@ -149,7 +158,7 @@ Try to start the game (`runblack`) via "Programs"...
 
 If the game does not start:
 
-- Start the Game with Terminal, and have a lock at the logs: click in "..." of the `runblack` program, click on "Launch with Terminal"
+- Start the Game with Terminal, and have a look at the logs: click in "..." of the `runblack` program, click on "Launch with Terminal"
 - Disable **VKD3D** and **DXVK**: click in "..." of the `runblack` program, click on "Change Launcher Options"
 - Turn off **Virtual Desktop**
 - Try different runners:
@@ -159,6 +168,8 @@ If the game does not start:
 - Set Working Directory to installed game directory `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White`
 - Use [flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) and configure permissions for bottles
     - Like the filesystem paths for your bottles and games
+
+> Black & White uses old DirectDraw/Direct3D APIs that sometimes work better without DXVK.
 
 
 #### Add to Steam (optional)
@@ -194,9 +205,11 @@ Customize game logo and header using [SGDBoop](https://www.steamgriddb.com/boop)
 - Install [HD assets](https://www.bwgame.net/downloads/hd-project.1474/)
 - Download more custom [Maps](https://www.bwgame.net/downloads/categories/maps.45/)
 
+see [mods/](mods/README.md) for more details.
+
 ---
 
-## Additional Infos
+## Additional Information
 
 ### Dependencies
 
@@ -204,10 +217,34 @@ Customize game logo and header using [SGDBoop](https://www.steamgriddb.com/boop)
 
 _See [Exported bottle config](Black-&-White.yml) for more details_
 
+### Tested Runners
+
+- wine-ge-proton8-26
+- GE-Proton9
+- kron4ek Wine-Proton
+
 ### Limitations
 
 - Game (window) may only renders on the primary monitor, if you are playing in window mode.
 - Fan patch or no-CD executable is required
+
+#### Lutris
+
+Alternatively, you can use [Lutris](https://lutris.net/games/black-white/) instead of Bottles.
+
+This guide uses Bottles because:
+
+ - easier Wine prefix management
+ - simpler DLL override configuration
+ - easier Flatpak integration
+ - cleaner Steam workflow
+ - easier switching between Wine runners
+
+Bottles also makes it easier to install directly from original CDs/ISOs and manage game-specific dependencies and Wine runners.
+
+#### Steam
+
+Running Black & White directly as a non-Steam game with Proton often does not work reliably without additional Wine configurations and dependencies.
 
 ### My Setup
 
