@@ -2,24 +2,26 @@
 
 ## Ultimate
 
-_Black & White: Ultimate is a fan overhaul/modpack for Black & White 1 that includes gameplay tweaks, fixes, and a all-in-one experience._
+_[Black & White: Ultimate](https://www.bwgame.net/downloads/black-white-ultimate.1460/) is a fan overhaul and modpack for Black & White 1 that includes gameplay tweaks, bug fixes, and an all-in-one experience._
+
+> Ultimate is a large modification based on Black & White: Creature Isle. It includes the original Black & White story, the original Creature Isle story and a bunch of extra features, all in one game. 
 
 **Important:** Start from a clean installation of Black & White + Creature Isle.
-_Do **not** install unofficial fan patches, or draw-distance with Ultimate, fixes are already included on there own._
+_Do **not** install unofficial fan patches or the infinite draw-distance mod with Ultimate, as these fixes are already included on their own._
 
-_Best case: create a new bottle for Black & White: Ultimate with a fresh B&W installation._
+_Best practice: Create a completely new bottle for Black & White: Ultimate with a fresh B&W installation._
 
-0. Install Black & White + Black & White: Creature Isle(updated to v1.23)
-1. Download [Black & White: Ultimate v1.40](https://www.bwgame.net/downloads/black-white-ultimate.1460/)
-2. Drag and drop the "Ultimate" folder into your Black & White directory. (`C:\Program Files (x86)\Lionhead Studios Ltd\Black & White`)
-3. Add "BWUltimate.exe" as a Bottles Program -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/Ultimate/BWUltimate.exe`
-4. Download [dxwrapper](https://github.com/elishacloud/dxwrapper)
-5. Extract "dxwrapper" into "Black & White/Ultimate/DDraw"
-6. Rename the original `ddraw_compat.dll` to `ddraw_compat.dll.bak` (from the DDraw/ folder)
-7. Copy out "ddraw.dll" from `Stub/` folder into "Black & White/Ultimate/DDraw", then rename the new "ddraw.dll" (copied from `Stub/`) -> "ddraw_compat.dll"
-8. Setup "DLL Overrides" and "dxwrapper.ini" (see below)
+1. Install Black & White + Black & White: Creature Isle (updated to v1.23)
+2. Download [Black & White: Ultimate v1.40](https://www.bwgame.net/downloads/black-white-ultimate.1460/)
+3. Drag and drop the "Ultimate" folder into your Black & White directory (`C:\Program Files (x86)\Lionhead Studios Ltd\Black & White`)
+4. Add "BWUltimate.exe" as a Bottles Program -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/Ultimate/BWUltimate.exe`
+5. Download [dxwrapper](https://github.com/elishacloud/dxwrapper).
+6. Extract "dxwrapper" into `Black & White/Ultimate/DDraw`
+7. Go to the `DDraw/` folder and rename the original `ddraw_compat.dll` to `ddraw_compat.dll.bak`
+8. Copy `ddraw.dll` out of the `Stub/` folder and paste it into `Black & White/Ultimate/DDraw`, then rename this new `ddraw.dll` to `ddraw_compat.dll`
+9. Set up your "DLL Overrides" and configure `dxwrapper.ini` (see below)
 
-_You can delete the `Stub/` folder now (optional)_
+_You can delete the `Stub/` folder now (optional)._
 
 ![DDraw Folder](../assets/screenshot10.png)
 
@@ -33,20 +35,19 @@ Add these DLL overrides and set them to:
 - `d3dim700`
 - `ddraw`
 
-_These overrides force Wine to prefer native DirectX wrapper DLLs over Wine’s builtin implementations._
+_These overrides force Wine to prefer native DirectX wrapper DLLs over Wine’s built-in implementations._
 
 ### Configure dxwrapper.ini
 
 _The `dxwrapper.ini` file is included with dxwrapper._
 
-Configure `dxwrapper.ini` (`Black & White/Ultimate/DDraw/dxwrapper.ini`), change the following Values:
+Open `dxwrapper.ini` (`Black & White/Ultimate/DDraw/dxwrapper.ini`) and change the following values:
 
 - `D3d9to9Ex=1`
 - `Dd7to9=1`
 - `DdrawUseDirect3D9Caps=1`
 
-
-You can setup much more, like running the game in fullscreen but make it borderless:
+You can configure many more options, such as running the game in borderless fullscreen:
 ```ini
 [Compatibility]
 Dd7to9                     = 1
@@ -77,7 +78,7 @@ FullscreenWindowMode       = 1
 
 #### No Menu
 
-- Verify `ddraw_compat.dll` was replaced correctly and wine is using `ddraw` Native
+- Verify that `ddraw_compat.dll` was replaced correctly and that Wine is successfully using `ddraw` as Native.
 
 #### Crashes on launch
 
@@ -86,20 +87,19 @@ FullscreenWindowMode       = 1
 
 #### Cursor issues
 
-- Try windowed mode
-- Uncheck Window Mode in Black & White Setup.exe (fullscreen mode)
-    - configure `dxwrapper.ini` for fullscreen usage
+- Try running the game in windowed mode.
+- Uncheck "Windowed Mode" in the Black & White Setup.exe (to use fullscreen mode), and then configure `dxwrapper.ini` to handle the fullscreen layout.
 
 #### Special Thanks
 
-Thanks to the people on the Black & White Discord and Shane for creating this mod
+Thanks to the community on the Black & White Discord and to Shane for creating this mod!
 
 ## Vanilla 
 
-_With fan patches_
+_Using standard fan patches_
 
-- https://www.bwgame.net/downloads/categories/b-w-mods-apps-tools.46/
-- https://www.bwgame.net/downloads/categories/maps.45/
+- [B&W: Mods Apps Tools](https://www.bwgame.net/downloads/categories/b-w-mods-apps-tools.46/)
+- [Maps](https://www.bwgame.net/downloads/categories/maps.45/)
 
 - [HD Project - V1.56 Final.7z](https://www.bwgame.net/downloads/hd-project.1474/)
 - [Infinite Drawing Distance - runblack.zip](https://www.bwgame.net/downloads/black-white-v1-42-infinite-drawing-distance.1464/)
