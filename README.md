@@ -6,18 +6,16 @@ This guide explains how to install **Black & White (2001)** on Linux using **Win
 
 ### System
 
-You need [bottles](https://usebottles.com/).  
-The simplest way to install Bottles is through [flatpak](https://flathub.org/en/apps/com.usebottles.bottles).
+You need [Bottles](https://usebottles.com/).  
+The simplest way to install Bottles is through [Flatpak](https://flathub.org/en/apps/com.usebottles.bottles).
 
 ### Game
 
-
-Black & White is no longer commercially distributed in most regions, it is considered **abandonware**.  
-Use original CDs/backups you own.
+Black & White is no longer commercially distributed in most regions and is considered **abandonware**.  
+Use the original CDs or backups that you own.
 
 - Black & White (2001)
 - Black & White: Creature Isle (2002)
-
 
 #### Patches
 
@@ -27,21 +25,20 @@ Use original CDs/backups you own.
 - [Patch v1.2](https://www.bwgame.net/downloads/v1-2-patch.130/)
 - [Patch v1.42 (Fanpatch)](https://www.bwgame.net/downloads/black-white-unofficial-patch-v1-42.1418/)
 
-
 ## Installation (Bottles + Wine)
 
-### preparation
+### Preparation
 
-1. Download all patches and store them in a folder (e.g. `~/Downloads/patches`).
+1. Download all patches and store them in a folder (e.g., `~/Downloads/patches`).
 2. Mount the CDs or ISO files:
-   - Black & White -> `/mnt/cdrom`
-   - Creature Isle -> `/mnt/cdrom2`
+   - Black & White -> e.g. `/mnt/cdrom`
+   - Creature Isle -> e.g. `/mnt/cdrom2`
 
-### Setup bottle
+### Setup Bottle
 
 1. Open **Bottles** and click **"+"** to create a new bottle.
 
-> Bottles Gaming environments already include required 32-bit compatibility support for older Windows games.
+> Bottles Gaming environments already include the required 32-bit compatibility support for older Windows games.
 
 ![create bottle](assets/screenshot1.png)
 
@@ -50,12 +47,12 @@ Use original CDs/backups you own.
 - **Runner:** `wine-ge-proton8-26`
 
 > You can install additional runners in Bottles via  
-> **Main Menu -> Preferences → Runners -> Wine GE**, then download `wine-ge-proton8-26`
+> **Main Menu -> Preferences -> Runners -> Wine GE**, then download `wine-ge-proton8-26`.
 
 2. Open the bottle **Settings**:
 
 - Disable `VKD3D`
-- **set "Windows Version" to `Windows XP`**
+- **Set "Windows Version" to `Windows XP`**
 
 ![settings](assets/screenshot2.png)
 
@@ -64,7 +61,7 @@ Use original CDs/backups you own.
 ![manage drives](assets/screenshot3.png)
 
 > You can also add the folder containing the patches here.  
-> CD- and patches-drives can be removed after installation.
+> CD and patch drives can be removed after installation.
 
 ### Install Game
 
@@ -72,22 +69,21 @@ Use original CDs/backups you own.
 2. Go to **Tools -> Legacy Wine Tools -> Explorer**.
 3. Navigate to the mounted CD and run `Setup.exe`.
 
+> **Note:** A serial key is required. It can usually be found online since the game is **abandonware**.
 
-> **Note:** A serial key is required. It can usually be found online due to the game being abandonware.
-
-Use default settings during installation.  
+Use the default settings during installation.  
 Skip the ReadMe, do **not** start the game, and skip online registration.
 
 ![install setup](assets/screenshot4.png)
 
-#### Copy audio files
+#### Copy Audio Files
 
-Copy "Audio" directory from CD into installed game directory `C:\Program Files (x86)\Lionhead Studios Ltd\Black & White`.
+Copy the "Audio" directory from the CD into the installed game directory: `C:\Program Files (x86)\Lionhead Studios Ltd\Black & White`.
 
-### Install patches
+### Install Patches
 
 Still in Wine Explorer, navigate to your patches folder  
-(e.g. `Z:\home\user\Downloads\patches`) and install the patches **in this order**:
+(e.g., `Z:\home\user\Downloads\patches`) and install the patches **in this exact order**:
 
 1. Black_White_Patch_v1.100.exe
 2. BW_Football_Addon.exe
@@ -101,14 +97,10 @@ Still in Wine Explorer, navigate to your patches folder
 
 1. In Explorer, go to: `C:\Program Files (x86)\Lionhead Studios Ltd\Black & White`.
 2. Run `Setup.exe`
-    - Configure resolution and graphics
-    - Optionally enable **Windowed Mode** for testing, later you can switch to fullscreen
+    - Configure resolution and graphics.
+    - Optionally enable **Windowed Mode** for testing; you can switch to fullscreen later.
 
-> Enable "Windowed Mode" for testing.
-> Later you can switch back to fullscreen mode.
-
-
-### Install Add-On Creature Isle (optional)
+### Install Add-On Creature Isle (Optional)
 
 1. In Explorer, open the Creature Isle CD
 2. Run `Setup.exe`
@@ -131,7 +123,7 @@ Add the following overrides ("Native, then Builtin"):
 
 ## Start/Test the Game
 
-1. Open **Legacy Wine Tools → Explorer**
+1. Open **Legacy Wine Tools -> Explorer**
 2. Navigate to the game directory
 3. Start `runblack.exe`
 
@@ -143,7 +135,7 @@ If the game starts and runs correctly - congratulations 🎉
 
 In the **Black & White** bottle, add the following programs:
 
-- CreatureIsle - CreatureIsle -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle/CreatureIsle.exe`
+- CreatureIsle -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle/CreatureIsle.exe`
 - Setup -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/Setup.exe`
 - runblack -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/runblack.exe`
 - Setup - CreatureIsle -> `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White/CreatureIsle/Setup.exe`
@@ -158,54 +150,49 @@ Try to start the game (`runblack`) via "Programs"...
 
 If the game does not start:
 
-- Start the Game with Terminal, and have a look at the logs: click in "..." of the `runblack` program, click on "Launch with Terminal"
-- Disable **VKD3D** and **DXVK**: click in "..." of the `runblack` program, click on "Change Launcher Options"
-- Turn off **Virtual Desktop**
+- **Launch via Terminal to see logs:** Click on the "..." next to the `runblack` program and select "Launch with Terminal".
+- **Disable VKD3D and DXVK:** Click on the "..." next to the `runblack` program, then click on "Change Launcher Options".
+- Turn off **Virtual Desktop**.
 - Try different runners:
     - `lutris-ge-...`
     - `kron4ek-wine-proton-...`
-- You can always start the game via **Wine Explorer**
-- Set Working Directory to installed game directory `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White`
-- Use [flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) and configure permissions for bottles
-    - Like the filesystem paths for your bottles and games
+- You can always try starting the game via **Wine Explorer**.
+- Set the Working Directory to the installed game directory: `.../bottles/Black-&-White/drive_c/Program Files (x86)/Lionhead Studios Ltd/Black & White`
+- Use [Flatseal](https://flathub.org/en/apps/com.github.tchx84.Flatseal) to configure permissions for Bottles (such as the filesystem paths for your bottles and games).
 
 > Black & White uses old DirectDraw/Direct3D APIs that sometimes work better without DXVK.
 
+#### Add to Steam (Optional)
 
-#### Add to Steam (optional)
+1. In Bottles, click **"..." -> "Add to Steam"** for `runblack`.
+2. Restart Steam if needed.
 
-1. In Bottles, click **"..." -> "Add to Steam"** for `runblack`
-2. Restart Steam if needed
+##### Gamescope (Optional)
 
-
-##### gamescope (optional)
-
-In Steam, Black & White:
-- **Manage -> Properties**
-- Set `gamescope` as target  
-(the **Start In** path may vary)
+In Steam, configure Black & White:
+- Go to **Manage -> Properties**.
+- Set `gamescope` as target (the **Start In** path may vary).
 - Edit Launch Options: `-b -w 1920 -h 1080 --framerate-limit 60 -- gamemoderun flatpak run --command=bottles-cli com.usebottles.bottles run -b "Black & White" -p "runblack"`
-    - Set Screen Resolution to 1920x1080
-    - Set Windowed Mode
+    - Set Screen Resolution to 1920x1080 (with Setup.exe)
+    - Set Windowed Mode (with Setup.exe)
 
-NOTE: Use the width and height of your Setup (see Setup.exe)
+NOTE: Use the width and height configured in your setup (see Setup.exe).
 
 ![steam gamescope](assets/screenshot7.png)
 
 #### Customize Header
 
-Customize game logo and header using [SGDBoop](https://www.steamgriddb.com/boop): https://www.steamgriddb.com/game/37411
+Customize the game logo and header using [SGDBoop](https://www.steamgriddb.com/boop): https://www.steamgriddb.com/game/37411
 
 ![custom header](assets/screenshot8.png)
 
-
 ## Install Mods
 
-- Replace `runblack.exe` with [Infinite Drawing Distance](https://www.bwgame.net/downloads/black-white-v1-42-infinite-drawing-distance.1464/)
-- Install [HD assets](https://www.bwgame.net/downloads/hd-project.1474/)
-- Download more custom [Maps](https://www.bwgame.net/downloads/categories/maps.45/)
+- Replace `runblack.exe` with the [Infinite Drawing Distance](https://www.bwgame.net/downloads/black-white-v1-42-infinite-drawing-distance.1464/) mod.
+- Install [HD assets](https://www.bwgame.net/downloads/hd-project.1474/).
+- Download more custom [Maps](https://www.bwgame.net/downloads/categories/maps.45/).
 
-see [mods/](mods/README.md) for more details.
+See [mods/](mods/README.md) for more details.
 
 ---
 
@@ -215,7 +202,7 @@ see [mods/](mods/README.md) for more details.
 
 ![wine dependencies](assets/screenshot9.png)
 
-_See [Exported bottle config](Black-&-White.yml) for more details_
+_See [Exported bottle config](Black-&-White.yml) for more details._
 
 ### Tested Runners
 
@@ -225,20 +212,20 @@ _See [Exported bottle config](Black-&-White.yml) for more details_
 
 ### Limitations
 
-- Game (window) may only renders on the primary monitor, if you are playing in window mode.
-- Fan patch or no-CD executable is required
+- The game window may only render on the primary monitor if you are playing in windowed mode.
+- A fan patch or no-CD executable is required.
 
 #### Lutris
 
 Alternatively, you can use [Lutris](https://lutris.net/games/black-white/) instead of Bottles.
 
-This guide uses Bottles because:
+This guide uses Bottles because it offers:
 
- - easier Wine prefix management
- - simpler DLL override configuration
- - easier Flatpak integration
- - cleaner Steam workflow
- - easier switching between Wine runners
+ - Easier Wine prefix management
+ - Simpler DLL override configuration
+ - Easier Flatpak integration
+ - A cleaner Steam workflow
+ - Simple switching between Wine runners
 
 Bottles also makes it easier to install directly from original CDs/ISOs and manage game-specific dependencies and Wine runners.
 
